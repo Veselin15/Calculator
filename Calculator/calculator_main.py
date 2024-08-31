@@ -82,7 +82,6 @@ class Calculator(QMainWindow):
 
 
 
-
         if sender.text() == "+":
             result = float(self.txt_number1.text()) + float(self.txt_number2.text())
         elif sender.text() == "-":
@@ -95,7 +94,7 @@ class Calculator(QMainWindow):
 
 
 
-        self.lbl_result.setText(f"Result: {str(result)}")
+        self.lbl_result.setText(f"Result : {str(result)}")
 
 def app():
     app = QApplication(sys.argv)

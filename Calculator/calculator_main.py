@@ -94,7 +94,7 @@ class Calculator(QMainWindow):
 
 
 
-        self.lbl_result.setText(f"Result : {str(result)}")
+        self.lbl_result.setText(f"Result: {str(result)}")
 
 def app():
     app = QApplication(sys.argv)

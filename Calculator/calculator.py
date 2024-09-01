@@ -142,21 +142,14 @@ class Calculator(QMainWindow):
         print(sender.text())
 
         if sender.text() == "+":
-            try:
-                number1 = float(self.txt_box.text())
-            except ValueError:
-                self.invalid_numbers_error()
-                return
             number1 = float(self.txt_box.text())
-            self.txt_box.setText("")
-        if self.txt_box.text() == "=":
-            try:
-                number2 = float(self.txt_box.text())
-            except ValueError:
-                self.invalid_numbers_error()
-                return
-            number2 = float(self.txt_box.text())
-            print(number2)
+            self.txt_box.setText("+")
+
+
+        number2 = float(self.txt_box.text())
+        print(number2)
+
+        if sender.text() == "=":
             result = number1 + number2
             print(result)
             self.txt_box.setText(str(result))
